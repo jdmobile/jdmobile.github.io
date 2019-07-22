@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--添加视口, 适配移动设备:
+    width=device-width: 让html的宽等于设备的宽（例如设备是iphone6 宽是375 pt）
+    initial-scale=1.0 : 不允许用户进行手动缩放
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 是否启用 WebApp 全屏模式（ content有两个值”yes”和”no”,默认no就是会显示苹果工具栏和菜单栏 ） -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- 设置状态栏的背景颜色,只有在 “apple-mobile-web-app-capable” content=”yes” 时生效，默认值为default（白色），可以定为black（黑色） -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--告诉设备忽略将页面中的数字识别为电话号码-->
+    <meta name="format-detection" content="telephone=no">
+    <title>京东商城</title>
+    <!--引入样式-->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_1171716_jf6vaaaurzr.css">
+    <link rel="stylesheet" href="./style/category.css">
+</head>
+<body class="scope">
+<header class="header">
+    <div class="left">
+        <i class="iconfont icon-fanhui1"></i>
+    </div>
+    <div class="center">
+        <i class="iconfont icon-sousuo"></i>
+        <input type="text" placeholder="蚕丝被">
+    </div>
+    <div class="right">
+        <i class="iconfont icon-gengduo-copy"></i>
+    </div>
+</header>
+<article class="main">
+    <aside class="aside">
+        <ul>
+        </ul>
+    </aside>
+    <article class="category-detail">
+
+    </article>
+</article>
+<footer class="footer">
+    <ul>
+        <li><i class="iconfont icon-home"></i><span>首页</span></li>
+        <li class="active"><a href="#"><i class="iconfont icon-fenlei"></i><span>分类</span></a></li>
+        <li><a href="#"><i class="iconfont icon-pingou"></i><span>拼购</span></a></li>
+        <li><a href="#"><i class="iconfont icon-gouwuche"></i><span>购物车</span></a></li>
+        <li><a href="#"><i class="iconfont icon-yonghu"></i><span>未登录</span></a></li>
+    </ul>
+</footer>
+<script src="libs/ejs/ejs.min.js"></script>
+<script src="libs/axios/dist/axios.min.js"></script>
+<script src="js/category.js"></script>
+</body>
+</html>
